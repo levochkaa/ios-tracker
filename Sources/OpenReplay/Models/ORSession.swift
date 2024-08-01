@@ -50,6 +50,7 @@ class ORSessionRequest: NSObject {
             "timezone": getTimezone(),
             "width": UInt64(UIScreen.main.bounds.width),
             "height": UInt64(UIScreen.main.bounds.height),
+            "platform": "android"
         ]
         callAPI(completion: completion)
     }
