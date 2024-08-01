@@ -48,8 +48,8 @@ class ORSessionRequest: NSObject {
             "performances": performances,
             "deviceMemory": UInt64(ProcessInfo.processInfo.physicalMemory / 1024),
             "timezone": getTimezone(),
-            "screenWidth": UInt64(UIScreen.main.bounds.width),
-            "screenHeight": UInt64(UIScreen.main.bounds.height),
+            "width": UInt64(UIScreen.main.bounds.width),
+            "height": UInt64(UIScreen.main.bounds.height),
         ]
         callAPI(completion: completion)
     }
